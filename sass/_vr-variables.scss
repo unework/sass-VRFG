@@ -1,0 +1,63 @@
+// Color system
+$gray: #a1a1a1; //placeholder
+$light-gray: rgba($gray, 0.5); //border color
+$light-light-gray: rgba($gray, 0.25); //form background, table line
+$dark-gray: #707070;
+$dark-dark-gray: #434343;
+$light-blue: #e5eff7;//background
+$sky-blue: #91BEDC; //button border, hover
+$blue: #0066B3;
+$orange: #FF6600;
+$red: #cc0000;
+$dark-red: #dd5800;
+$light-red: #f5cccc;
+$green: #009900;
+$light-green: rgba($green, 0.20);
+
+// Font
+$font-family-sans-serif: "frutiger_vrregular", Arial, sans-serif;
+$font-family-base: "frutiger_vrregular", Arial, sans-serif;
+$font-size-base: 14px;
+$line-height-base: 20px;
+$h1-font-size: 28px;
+$h2-font-size: 20px;
+$h3-font-size: 16px;
+$h4-font-size: 15px;
+$headings-line-height: 30px;
+$headings-color: $dark-gray;
+$dt-font-weight: normal;
+
+// Settings for the `<body>` element.
+$body-color: $dark-dark-gray;
+
+// Links
+$link-color: $blue;
+$link-hover-color: $sky-blue;
+$link-hover-decoration: none;
+
+$border-radius: 4px;
+$border-color: $light-gray;
+
+//overwrite bootstrap $spacer 1rem
+$spacer: 20px;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3)
+);
+
+$container-max-widths: (
+  sm: none,
+  md: none,
+  lg: none,
+  xl: none
+);
+
+$form-text-margin-top: 0;
+
+$table-accent-bg: rgba($dark-gray, 0.1);
+
+$text-muted: $gray;

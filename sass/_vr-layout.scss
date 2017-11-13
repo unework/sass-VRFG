@@ -1,0 +1,87 @@
+dd {
+  color: $gray;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.edit-block {
+  position: relative;
+  margin-top: 20px;
+  .link-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.gray-block {
+  background-color: $light-light-gray;
+}
+
+.gray-block-amount {
+  padding: 20px 10px;
+  &:first-of-type {
+    padding-left: 20px;
+  }
+  &:last-of-type {
+    padding-right: 20px;
+  }
+  background-color: $light-light-gray;
+}
+
+.gray-block-note {
+  padding: 15px 20px;
+  background-color: $light-light-gray;
+}
+
+.gray-block-settings {
+  padding: 30px 20px;
+  background-color: $light-light-gray;
+}
+
+.gray-line {
+  border-bottom: 1px solid $gray;
+  padding-bottom: 20px;
+}
+
+.light-gray-line {
+  border-bottom: 1px solid $light-gray;
+}
+
+.light-blue-line {
+  border-bottom: 1px solid $light-blue;
+  padding-bottom: 20px;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.cta1-button {
+  @include cta-button(white, $orange, $orange, white, $dark-red)
+}
+
+.cta2-button {
+  @include cta-button($blue, white, $sky-blue, $blue, $light-blue)
+}
+
+.cta2-icon-only {
+  width: 40px;
+}
+
+.text-muted {
+  color: $text-muted;
+  font-size: 12px;
+}
+
+.contact-info {
+  li {
+    line-height: 26px;
+  }
+  label {
+    width: 100px;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,76 @@
+
+.sidebar {
+  width: 272px !important;
+  a {
+    color: $dark-gray;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.sidebar-logo {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 12px;
+  img {
+    height: 24px;
+  }
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 18px;
+  color: $dark-gray;
+}
+
+.sidebar-menu {
+  margin-left: 30px;
+  li {
+    line-height: 47px;
+    i {
+      margin-right: 8px;
+    }
+  }
+}
+
+.sidebar-account {
+  flex: 1 0 auto;
+  margin: 20px 15px 15px;
+  border-top: 2px solid $light-light-gray;
+  li {
+    text-align: center;
+    img {
+      width: 100px;
+      height: 100px;
+      margin-top: 30px;
+      border-radius: 50%;
+      border: 3px solid $gray;
+    }
+  }
+}
+
+.sidebar-account-name {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.sidebar-logout {
+  margin-top: 25px;
+  i {
+    font-size: 21px;
+    width: 28px;
+  }
+}
+
+.sidebar-help {
+  font-size: 16px;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-bottom: 35px;
+  li {
+    line-height: 26px;
+  }
+}
