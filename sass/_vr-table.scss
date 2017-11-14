@@ -23,6 +23,11 @@ table {
     padding: 2px 0;
   }
 
+  > thead > tr > th:first-child,
+  > tbody > tr > td:first-child {
+    padding-left: 20px;
+  }
+
   > tbody > tr:last-child.even {
     border-bottom: 2px solid $table-accent-bg;
   }
@@ -153,6 +158,11 @@ table {
 .lettershop-table {
   @include table-basic;
   @include table-bordered-head-foot;
+
+  th:first-child, td:first-child {
+    padding-left: 20px;
+  }
+
   th:last-child, td:last-child {
     text-align: right;
   }
@@ -162,13 +172,27 @@ table {
   @include table-basic;
   @include table-bordered;
   table-layout: fixed;
+
   th, td {
     @include text-overflow-ellipsis;
     width: 125px;
   }
-  > thead > tr > th:first-child,
-  > tbody > tr > td:first-child {
+
+  th:first-child, td:first-child {
     padding-left: 13px;
     width: 137px;
+  }
+}
+
+.pdf-preview-table {
+  @include table-basic;
+  @include table-bordered;
+  td {
+    color: $dark-dark-gray;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  th:last-child, td:last-child {
+    text-align: right;
   }
 }

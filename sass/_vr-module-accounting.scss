@@ -1,0 +1,45 @@
+.accounting-block {
+  margin-bottom: 20px;
+  border-top: 2px solid $border-color;
+
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+  }
+
+  .downloads {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-left: 35px;
+    li {
+      margin-right: 20px;
+      .fa-file {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.accounting-overview {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  border-bottom: 2px solid $border-color;
+  ul {
+    text-align: right;
+    font-weight: bold;
+    li:first-child {
+      padding-bottom: 6px;
+      color: $dark-dark-gray;
+      font-size: 14px;
+    }
+    li:nth-child(2),
+    li:nth-child(3) {
+      color: $orange;
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+}

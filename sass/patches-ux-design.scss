@@ -8,4 +8,9 @@
 @import "vr-forms";
 @import "vr-table";
 @import "vr-layout";
-@import "vr-content";
+
+@import "vr-module-outbox";
+@import "vr-module-inbox";
+@import "vr-module-customers-suppliers";
+@import "vr-module-accounting";
+@import "vr-module-settings";

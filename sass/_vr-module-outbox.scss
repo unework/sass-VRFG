@@ -1,0 +1,37 @@
+.upload-icon-logo {
+  bottom: -12px;
+  right: -12px;
+}
+
+.position .col-1 {
+  min-width: 95px;
+}
+
+.pdf-preview-wrapper {
+  border: 1px solid $gray;
+  // box-shadow: inset 0 -10px 5px -10px $gray;
+  display: flex;
+  flex-direction: column;
+  height: 1169.5px;
+  padding: 70px 70px 30px 70px;
+  width: 827px;
+}
+
+.pdf-preview-logo-wrapper {
+  height: 90px;
+  width: 320px;
+}
+
+.pdf-preview-logo {
+  max-height: 90px;
+  max-width: 320px;
+}
+
+.pdf-preview-footer {
+  color: $dark-gray;
+  li {
+    font-size: 12px;
+    line-height: 14px;
+    white-space: nowrap;
+  }
+}

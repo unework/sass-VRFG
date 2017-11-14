@@ -1,0 +1,32 @@
+.pdf-viewer {
+  position: sticky;
+  top: 0;
+  height: 990px;
+  margin-left: 20px;
+  .gray-block {
+    height: 810px;
+  }
+  .footnote {
+    padding-top: 10px;
+    color: $gray;
+  }
+}
+
+.upload-icon {
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    font-size: 22px;
+  }
+}
+
+.upload-icon-pdf {
+  top: 50%;
+  left: 45%;
+}
