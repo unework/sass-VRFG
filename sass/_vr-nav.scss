@@ -7,6 +7,9 @@
       color: $blue;
     }
   }
+  .active-item a {
+    color: $blue;
+  }
 }
 
 .sidebar-logo {
@@ -31,7 +34,7 @@
   li {
     line-height: 47px;
     i {
-      margin-right: 8px;
+      width: 26px;
     }
   }
 }
