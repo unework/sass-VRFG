@@ -2,10 +2,43 @@
   justify-content: center !important;
 }
 
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.text-muted {
+  color: $text-muted;
+  font-size: 12px;
+}
+
+.text-gray {
+  color: $text-muted;
+}
+
+.no-border {
+  border: none !important;
+}
+
 .border-bottom-none {
   border-bottom: none !important;
 }
 
-.flex-grow-1 {
-  flex-grow: 1;
+.border-2px-top {
+  border-top: 2px solid $light-light-gray;
+}
+
+.border-2px-bottom {
+  border-bottom: 2px solid $light-light-gray;
+}
+
+.border-double-bottom {
+  border-bottom: 5px double $light-light-gray;
+}
+
+.border-1px-top {
+  border-top: 1px solid $light-light-gray;
+}
+
+.border-1px-bottom {
+  border-bottom: 1px solid $light-light-gray;
 }

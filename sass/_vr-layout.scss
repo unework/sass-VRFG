@@ -28,7 +28,10 @@ ul {
   &:last-of-type {
     padding-right: 20px;
   }
-  background-color: $light-light-gray;
+  background-color: $table-accent-bg;
+  .dropdown {
+    background-color: white;
+  }
 }
 
 .gray-block-note {
@@ -55,10 +58,6 @@ ul {
   padding-bottom: 20px;
 }
 
-.no-border {
-  border: none !important;
-}
-
 .cta1-button {
   @include cta-button(white, $orange, $orange, white, $dark-red)
 }
@@ -71,9 +70,9 @@ ul {
   width: 40px;
 }
 
-.text-muted {
-  color: $text-muted;
-  font-size: 12px;
+.accordion-arrow {
+  font-size: 22px;
+  color: $blue;
 }
 
 .contact-info {

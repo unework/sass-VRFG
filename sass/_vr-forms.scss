@@ -117,3 +117,7 @@ SELECT,
 .input-box-icon {
   @include form-icon(36px);
 }
+
+.input-md {
+  width: 130px !important;
+}

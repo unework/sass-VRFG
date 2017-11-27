@@ -199,3 +199,25 @@ table {
     text-align: right;
   }
 }
+
+.transaction-allocation-table {
+  width: 100%;
+  td {
+    height: 36px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    &:first-child {
+      width: 20px;
+    }
+  }
+  th:last-child, td:last-child {
+    padding-right: 20px;
+    text-align: right;
+  }
+  tr:first-child {
+    border-bottom: 1px solid $light-light-gray;
+  }
+  tr:last-child {
+    border-top: 1px solid $light-light-gray;
+  }
+}
