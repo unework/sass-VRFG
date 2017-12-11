@@ -85,7 +85,7 @@ SELECT,
 }
 
 .dropdown-item {
-  padding-right: 12px;
+  padding-right: 20px;
 }
 
 .dropdown-arrow {
@@ -94,7 +94,12 @@ SELECT,
 
 .disabled {
   opacity: 0.5;
-  cursor: default;
+  input,
+  .dropdown,
+  .dropdown-item,
+  .dropdown-arrow {
+    cursor: default;
+  }
 }
 
 .gender-radio-button {
