@@ -29,12 +29,9 @@ textarea.email-subject {
   min-height: 40px;
 }
 
-textarea.email-message {
-  min-height: 80px;
-}
-
+textarea.email-message,
 textarea.email-signature {
-  min-height: 80px;
+  height: 80px;
 }
 
 .settings-list {
