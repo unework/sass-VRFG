@@ -178,12 +178,12 @@ table {
 
   th, td {
     @include text-overflow-ellipsis;
-    width: 125px;
+    width: 150px;
   }
 
   th:first-child, td:first-child {
     padding-left: 13px;
-    width: 137px;
+    width: 162px;
   }
 }
 

@@ -1,7 +1,7 @@
 .import-table-wrapper {
   height: 200px;
   overflow: auto;
-  box-shadow: inset -20px -20px 20px -8px $gray;
+  box-shadow: inset -20px -20px 20px -8px $light-gray;
 }
 
 .import-table-header {
@@ -12,7 +12,7 @@
   flex-grow: 0;
   flex-shrink: 0;
   margin-right: 10px;
-  width: 115px;
+  width: 140px;
   .dropdown-item,
   .selectBox-label {
     @include text-overflow-ellipsis;
