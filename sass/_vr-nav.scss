@@ -2,13 +2,13 @@
 .sidebar {
   // width: 272px !important;
   a {
-    color: $dark-gray;
+    color: $color-dove-gray;
     &:hover {
-      color: $blue;
+      color: $color-endeavour;
     }
   }
   .active-item a {
-    color: $blue;
+    color: $color-endeavour;
   }
 }
 
@@ -26,7 +26,7 @@
   flex-direction: column;
   height: 100%;
   font-size: 18px;
-  color: $dark-gray;
+  color: $color-dove-gray;
 }
 
 .sidebar-menu {
@@ -42,7 +42,7 @@
 .sidebar-account {
   flex: 1 0 auto;
   margin: 20px 15px 15px;
-  border-top: 2px solid $light-light-gray;
+  border-top: 2px solid $color-mercury;
   li {
     text-align: center;
     img {
@@ -50,7 +50,7 @@
       height: 100px;
       margin-top: 30px;
       border-radius: 50%;
-      border: 3px solid $gray;
+      border: 3px solid $color-silver-chalice;
     }
   }
 }
@@ -75,5 +75,36 @@
   padding-bottom: 35px;
   li {
     line-height: 26px;
+  }
+}
+
+// Tabs
+.nav-tabs {
+  border-bottom: 1px solid $color-silver-chalice;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  .nav-item {
+    margin: 0 5px -1px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  .nav-link {
+    border: 1px solid transparent;
+    border-color: $color-endeavour $color-endeavour transparent;
+    display: block;
+    height: 100%;
+    line-height: 42px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .nav-link.active {
+    color: $color-silver-chalice;
+    border-color: $color-silver-chalice $color-silver-chalice white;
+  }
+  .bank-logo {
+    height: 30px;
+    width: 30px;
   }
 }

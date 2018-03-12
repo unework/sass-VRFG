@@ -1,18 +1,4 @@
-// Color system
-$gray: #a1a1a1; //placeholder
-$light-gray: rgba($gray, 0.5); //border color
-$light-light-gray: rgba($gray, 0.25); //form background, table line
-$dark-gray: #707070;
-$dark-dark-gray: #434343;
-$light-blue: #e5eff7;//background
-$sky-blue: #91BEDC; //button border, hover
-$blue: #0066B3;
-$orange: #FF6600;
-$red: #cc0000;
-$dark-red: #dd5800;
-$light-red: #f5cccc;
-$green: #009900;
-$light-green: rgba($green, 0.20);
+@import "vr-color-variables";
 
 // Font
 $font-family-sans-serif: "frutiger_vrregular", Arial, sans-serif;
@@ -24,19 +10,19 @@ $h2-font-size: 20px;
 $h3-font-size: 16px;
 // $h4-font-size: 15px;
 $headings-line-height: 30px;
-$headings-color: $dark-gray;
+$headings-color: $color-dove-gray;
 $dt-font-weight: normal;
 
 // Settings for the `<body>` element.
-$body-color: $dark-dark-gray;
+$body-color: $color-tundora;
 
 // Links
-$link-color: $blue;
-$link-hover-color: $sky-blue;
+$link-color: $color-endeavour;
+$link-hover-color: $color-morning-glory;
 $link-hover-decoration: none;
 
 $border-radius: 4px;
-$border-color: $light-gray;
+$border-color: $color-alto;
 
 //overwrite bootstrap $spacer 1rem
 $spacer: 20px;
@@ -66,6 +52,7 @@ $grid-breakpoints: (
 
 $form-text-margin-top: 0;
 
-$table-accent-bg: rgba($dark-gray, 0.1);
+$table-accent-bg: $color-seashell;
+$table-border-color: $color-mercury;
 
-$text-muted: $gray;
+$text-muted: $color-silver-chalice;

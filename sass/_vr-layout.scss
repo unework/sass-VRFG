@@ -1,9 +1,11 @@
 dd {
-  color: $gray;
+  color: $color-silver-chalice;
 }
 
 ul {
+  list-style: none;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 .edit-block {
@@ -17,7 +19,7 @@ ul {
 }
 
 .gray-block {
-  background-color: $light-light-gray;
+  background-color: $color-mercury;
 }
 
 .gray-block-amount {
@@ -28,7 +30,7 @@ ul {
   &:last-of-type {
     padding-right: 20px;
   }
-  background-color: $light-light-gray;
+  background-color: $color-mercury;
   .dropdown {
     background-color: white;
   }
@@ -36,43 +38,72 @@ ul {
 
 .gray-block-note {
   padding: 15px 20px;
-  background-color: $light-light-gray;
+  background-color: $color-mercury;
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .gray-block-settings {
   padding: 30px 20px;
-  background-color: $light-light-gray;
+  background-color: $color-mercury;
 }
 
 .gray-line {
-  border-bottom: 1px solid $gray;
+  border-bottom: 1px solid $color-silver-chalice;
   padding-bottom: 20px;
 }
 
 .light-gray-line {
-  border-bottom: 1px solid $light-gray;
+  border-bottom: 1px solid $color-alto;
 }
 
 .light-blue-line {
-  border-bottom: 1px solid $light-blue;
+  border-bottom: 1px solid $color-link-water;
   padding-bottom: 20px;
 }
 
 .cta1-button {
-  @include cta-button(white, $orange, $orange, white, $dark-red)
+  @include cta-button(white, $color-blaze-orange, $color-blaze-orange, white, $color-bamboo);
 }
 
 .cta2-button {
-  @include cta-button($blue, white, $sky-blue, $blue, $light-blue)
+  @include cta-button($color-endeavour, white, $color-morning-glory, $color-endeavour, $color-link-water);
+  > .fa-angle-right {
+    margin-left: 12px;
+    margin-right: 0;
+  }
 }
 
-.cta2-icon-only {
+.cta-icon-only {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
   width: 40px;
+  > .fa {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.big-link {
+  font-size: 16px;
+  > .fa {
+    margin-right: 11px;
+    font-size: 18px;
+  }
+}
+
+.text-link {
+  > .fa {
+    margin-right: 8px;
+    font-size: 16px;
+  }
 }
 
 .accordion-arrow {
   font-size: 22px;
-  color: $blue;
+  color: $color-endeavour;
 }
 
 .contact-info {
@@ -82,5 +113,18 @@ ul {
   label {
     width: 100px;
     margin-bottom: 0;
+  }
+}
+
+.pagination {
+  display: flex;
+  .page-item {
+    align-self: center;
+    font-weight: bold;
+    text-align: center;
+    width: 40px;
+  }
+  .page-link.active {
+    color: $color-silver-chalice;
   }
 }

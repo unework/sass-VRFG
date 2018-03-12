@@ -6,24 +6,24 @@
 
 @mixin table-bordered-head-foot {
   th {
-    border-top: 2px solid $light-light-gray;
-    border-bottom: 2px solid $light-light-gray;
+    border-top: 2px solid $table-border-color;
+    border-bottom: 2px solid $table-border-color;
   }
   tbody tr:last-child td {
-    border-bottom: 2px solid $light-light-gray;
+    border-bottom: 2px solid $table-border-color;
   }
 }
 
 @mixin table-bordered-body {
   td {
-    border-bottom: 1px solid $light-light-gray;
+    border-bottom: 1px solid $table-border-color;
   }
 }
 
 @mixin table-bordered {
   @include table-bordered-head-foot;
   td {
-    border-bottom: 1px solid $light-light-gray;
+    border-bottom: 1px solid $table-border-color;
   }
 }
 
@@ -38,12 +38,12 @@
   th {
     height: 30px;
     a {
-      color: $dark-dark-gray;
+      color: $color-tundora;
     }
   }
   td {
     height: 44px;
-    color: $dark-gray;
+    color: $color-dove-gray;
   }
 }
 
@@ -63,9 +63,12 @@
     background-color: $hover-bg-color;
   }
   &:disabled {
+    color: $color;
+    cursor: default;
+    background-color: $bg-color;
     opacity: 0.3;
   }
-  > i {
+  > .fa {
     margin-right: 12px;
     font-size: 18px;
   }

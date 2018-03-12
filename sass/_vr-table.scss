@@ -2,9 +2,24 @@ table {
   font-size: 15px;
 }
 
-.table-list {
-  @include table-striped;
+.table-bordered {
   @include table-basic;
+  @include table-bordered;
+}
+
+.table-bordered-head-foot {
+  @include table-basic;
+  @include table-bordered-head-foot;
+}
+
+.table-striped {
+  @include table-basic;
+  @include table-striped;
+}
+
+.table-list {
+  @include table-basic;
+  @include table-striped;
 
   td {
     > table {
@@ -45,9 +60,7 @@ table {
     padding-right: 2px;
     text-align: right;
   }
-  .sendReminder {
-    width: 54px;
-  }
+  
   .createCancelation {
     width: 40px;
     padding-right: 2px;
@@ -99,7 +112,7 @@ table {
   margin-left: 20px;
   margin-right: 40px;
   margin-bottom: 30px;
-  color: $dark-dark-gray;
+  color: $color-tundora;
   border-collapse: separate;
   border-spacing: 2px;
   font-size: 14px;
@@ -112,7 +125,7 @@ table {
     width: 153px; // 53%;
     height: 45px;
     text-align: right;
-    background-color: $light-green;
+    background-color: $color-zanah;
   }
   th:nth-child(2),
   td:nth-child(2),
@@ -122,7 +135,7 @@ table {
   }
   th:nth-child(2) {
     color: white;
-    background-color: $orange;
+    background-color: $color-blaze-orange;
   }
   td {
     height: 22px;
@@ -191,7 +204,7 @@ table {
   @include table-basic;
   @include table-bordered;
   td {
-    color: $dark-dark-gray;
+    color: $color-tundora;
     padding-bottom: 10px;
     padding-top: 10px;
   }
@@ -215,9 +228,9 @@ table {
     text-align: right;
   }
   tr:first-child {
-    border-bottom: 1px solid $light-light-gray;
+    border-bottom: 1px solid $table-border-color;
   }
   tr:last-child {
-    border-top: 1px solid $light-light-gray;
+    border-top: 1px solid $table-border-color;
   }
 }

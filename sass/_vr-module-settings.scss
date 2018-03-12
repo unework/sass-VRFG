@@ -1,27 +1,24 @@
 
 .bank-avatar {
   display: flex;
-  li {
-    display: flex;
+  .bank-avatar-item {
     align-items: center;
+    background-color: white;
+    border: 1px solid $color-endeavour;
+    color: $color-dove-gray;
+    cursor: pointer;
+    display: flex;
     height: 72px;
     margin-right: 10px;
-    padding-left: 11px;
-    padding-right: 11px;
-    color: $dark-gray;
-    background-color: white;
-    &:last-child {
-      padding-left: 0;
-      padding-right: 0;
-      background-color: transparent;
-    }
-    img {
+    padding-left: 10px;
+    padding-right: 10px;
+    .bank-logo {
       height: 50px;
-      margin-right: 11px;
+      margin-right: 12px;
     }
-    // a {
-    //   border: 1px solid $blue;
-    // }
+  }
+  .bank-avatar-item.active {
+    border: none;
   }
 }
 
@@ -54,16 +51,16 @@ textarea.email-signature {
   .fee-upper-edge {
     grid-column: 1;
     grid-row: 1;
-    border-top: 5px solid $orange;
-    border-left: 5px solid $orange;
-    border-right: 5px solid $orange;
+    border-top: 5px solid $color-blaze-orange;
+    border-left: 5px solid $color-blaze-orange;
+    border-right: 5px solid $color-blaze-orange;
   }
   .fee-lower-edge {
     grid-column: 1;
     grid-row: 3;
-    border-bottom: 5px solid $orange;
-    border-left: 5px solid $orange;
-    border-right: 5px solid $orange;
+    border-bottom: 5px solid $color-blaze-orange;
+    border-left: 5px solid $color-blaze-orange;
+    border-right: 5px solid $color-blaze-orange;
   }
   .monthly-fee {
     grid-column: 1;
@@ -78,7 +75,7 @@ textarea.email-signature {
     justify-self: center;
     align-self: center;
     font-size: 36px;
-    color: $gray;
+    color: $color-silver-chalice;
   }
 }
 
