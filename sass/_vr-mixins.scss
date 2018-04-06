@@ -81,10 +81,10 @@
 }
 
 @mixin form-icon($top) {
-    color: #0066B3;
-    cursor: pointer;
-    font-size: 22px;
-    position: absolute;
-    right: 10px;
-    top: $top;
+  color: #0066B3;
+  cursor: pointer;
+  font-size: 22px;
+  position: absolute;
+  right: 10px;
+  top: $top;
 }

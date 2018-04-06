@@ -1,13 +1,14 @@
 
 .sidebar {
-  // width: 272px !important;
+  width: 272px !important;
   a {
     color: $color-dove-gray;
     &:hover {
       color: $color-endeavour;
     }
   }
-  .active-item a {
+  .active-item > a,
+  a.active-item {
     color: $color-endeavour;
   }
 }
@@ -30,52 +31,98 @@
 }
 
 .sidebar-menu {
-  margin-left: 30px;
-  li {
-    line-height: 47px;
-    i {
-      width: 26px;
-    }
+  flex: 1 0 auto;
+  margin-left: 27px;
+}
+
+.sidebar-menu-item {
+  line-height: 47px;
+  i {
+    width: 26px;
+  }
+}
+
+.sidebar-submenu {
+  border-top: 1px solid $color-mercury;
+  border-bottom: 1px solid $color-mercury;
+  margin: 7px 27px 7px 0;
+}
+
+.sidebar-submenu-item {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 26px;
+  padding-top: 11px;
+  &:last-child {
+    padding-bottom: 10px;
   }
 }
 
 .sidebar-account {
-  flex: 1 0 auto;
-  margin: 20px 15px 15px;
-  border-top: 2px solid $color-mercury;
-  li {
-    text-align: center;
-    img {
-      width: 100px;
-      height: 100px;
-      margin-top: 30px;
-      border-radius: 50%;
-      border: 3px solid $color-silver-chalice;
-    }
-  }
+  border-top: 1px solid $color-mercury;
+  border-bottom: 1px solid $color-mercury;
+  display: flex;
+  margin: 20px 24px 0;
+  min-height: 80px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.sidebar-account-body {
+  margin-left: 8px;
 }
 
 .sidebar-account-name {
   font-size: 16px;
-  margin-top: 10px;
+  margin-bottom: 8px;
 }
 
-.sidebar-logout {
-  margin-top: 25px;
-  i {
-    font-size: 21px;
-    width: 28px;
-  }
+.sidebar-account-avatar {
+  border-radius: 50%;
+  border: 1px solid $color-silver-chalice;
+  height: 47px;
+  width: 47px;
 }
 
 .sidebar-help {
   font-size: 16px;
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: 20px;
+  margin-left: 24px;
   padding-bottom: 35px;
   li {
     line-height: 26px;
   }
+}
+
+@include media-breakpoint-down(lg) {
+
+  .sidebar {
+    width: 80px !important;
+  }
+
+  .sidebar-logo,
+  .sidebar-account {
+    visibility: hidden;
+  }
+
+  .sidebar-submenu,
+  .sidebar-menu-text,
+  .sidebar-account-body,
+  .sidebar-help {
+    display: none;
+  }
+
+  .sidebar-account {
+    margin-left: 15px;
+    margin-right: 0;
+  }
+
+  .sidebar-account-avatar {
+    margin-bottom: 161px;
+    visibility: visible;
+  }
+
 }
 
 // Tabs

@@ -57,10 +57,10 @@ SELECT,
   &:focus {
     border-color: $color-blaze-orange;
   }
-  &:placeholder {
+  &::placeholder {
     color: $color-silver-chalice;
   }
-  &:-ms-input-placeholder {
+  &::-ms-input-placeholder {
     color: $color-silver-chalice;
   }
 }
