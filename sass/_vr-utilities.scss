@@ -2,6 +2,10 @@
   justify-content: center !important;
 }
 
+.align-self-center {
+  align-self: center !important;
+}
+
 .flex-grow-1 {
   flex-grow: 1;
 }
@@ -24,27 +28,27 @@
 }
 
 .border-2px-top {
-  border-top: 2px solid $light-light-gray;
+  border-top: 2px solid $table-border-color;
 }
 
 .border-2px-bottom {
-  border-bottom: 2px solid $light-light-gray !important;
+  border-bottom: 2px solid $table-border-color !important;
 }
 
 .border-double-bottom {
-  border-bottom: 5px double $light-light-gray;
+  border-bottom: 5px double $table-border-color;
 }
 
 .border-dashed-bottom {
-border-bottom: 1px dashed $light-light-gray !important;
+border-bottom: 1px dashed $table-border-color !important;
 }
 
 .border-1px-top {
-  border-top: 1px solid $light-light-gray;
+  border-top: 1px solid $table-border-color;
 }
 
 .border-1px-bottom {
-  border-bottom: 1px solid $light-light-gray;
+  border-bottom: 1px solid $table-border-color;
 }
 
 .inline-block {
