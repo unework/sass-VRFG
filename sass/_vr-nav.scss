@@ -95,35 +95,35 @@
   }
 }
 
-@include media-breakpoint-down(lg) {
-
-  .sidebar {
-    width: 80px !important;
-  }
-
-  .sidebar-logo,
-  .sidebar-account {
-    visibility: hidden;
-  }
-
-  .sidebar-submenu,
-  .sidebar-menu-text,
-  .sidebar-account-body,
-  .sidebar-help {
-    display: none;
-  }
-
-  .sidebar-account {
-    margin-left: 15px;
-    margin-right: 0;
-  }
-
-  .sidebar-account-avatar {
-    margin-bottom: 161px;
-    visibility: visible;
-  }
-
-}
+// @include media-breakpoint-down(lg) {
+//
+//   .sidebar {
+//     width: 80px !important;
+//   }
+//
+//   .sidebar-logo,
+//   .sidebar-account {
+//     visibility: hidden;
+//   }
+//
+//   .sidebar-submenu,
+//   .sidebar-menu-text,
+//   .sidebar-account-body,
+//   .sidebar-help {
+//     display: none;
+//   }
+//
+//   .sidebar-account {
+//     margin-left: 15px;
+//     margin-right: 0;
+//   }
+//
+//   .sidebar-account-avatar {
+//     margin-bottom: 161px;
+//     visibility: visible;
+//   }
+//
+// }
 
 // Tabs
 .nav-tabs {
