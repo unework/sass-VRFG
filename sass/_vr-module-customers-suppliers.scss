@@ -1,20 +1,22 @@
 .import-table-wrapper {
-  height: 200px;
+  max-height: 500px;
+  min-height: 250px;
   overflow: auto;
   box-shadow: inset -20px -20px 20px -8px $light-gray;
 }
 
-.import-table-header {
-  display: flex;
-}
-
 .import-table-header-name {
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin-right: 10px;
   width: 140px;
+  padding-bottom: 10px;
+  padding-right: 10px;
   .dropdown-item,
   .selectBox-label {
     @include text-overflow-ellipsis;
+  }
+  .selectBox-label {
+    padding-right: 10px;
+  }
+  label {
+    display: block;
   }
 }

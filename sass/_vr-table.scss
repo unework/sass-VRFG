@@ -176,15 +176,15 @@ table {
   @include table-bordered;
   table-layout: fixed;
 
+  th {
+    font-size: 14px;
+  }
+
   th, td {
     @include text-overflow-ellipsis;
     width: 150px;
   }
 
-  th:first-child, td:first-child {
-    padding-left: 13px;
-    width: 162px;
-  }
 }
 
 .pdf-preview-table {
