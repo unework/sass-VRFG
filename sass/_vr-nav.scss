@@ -1,11 +1,17 @@
 
+//Styles for Navi desktop (>=1280px)
 .sidebar {
-  width: 272px !important;
-  a {
-    color: $color-dove-gray;
-    &:hover {
-      color: $color-endeavour;
-    }
+  background-color: white;
+  box-shadow: 0 2px 4px 0 $color-alto;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: 500ms;
+  width: 272px;
+  z-index: 100;
+  a:hover {
+    color: $color-endeavour;
   }
   .active-item > a,
   a.active-item {
@@ -13,9 +19,9 @@
   }
 }
 
-.sidebar-logo {
+.logo {
   margin-top: 30px;
-  margin-left: 30px;
+  margin-left: 25px;
   margin-bottom: 12px;
   img {
     height: 24px;
@@ -23,19 +29,24 @@
 }
 
 .sidebar-nav {
+  color: $color-dove-gray;
   display: flex;
   flex-direction: column;
+  font-size: 16px;
   height: 100%;
-  font-size: 18px;
-  color: $color-dove-gray;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .sidebar-menu {
-  flex: 1 0 auto;
-  margin-left: 27px;
+  margin-left: 25px;
+  min-height: 376px;
+  overflow-y: auto;
+  @include scrolling-shadows;
 }
 
 .sidebar-menu-item {
+  font-size: 18px;
   line-height: 47px;
   i {
     width: 26px;
@@ -45,15 +56,16 @@
 .sidebar-submenu {
   border-top: 1px solid $color-mercury;
   border-bottom: 1px solid $color-mercury;
-  margin: 7px 27px 7px 0;
+  margin: 7px 25px 7px 0;
+  white-space: normal;
 }
 
 .sidebar-submenu-item {
   display: block;
-  font-size: 16px;
   line-height: 22px;
-  padding-left: 26px;
+  padding-left: 31px;
   padding-top: 11px;
+  width: 207px;
   &:last-child {
     padding-bottom: 10px;
   }
@@ -63,7 +75,7 @@
   border-top: 1px solid $color-mercury;
   border-bottom: 1px solid $color-mercury;
   display: flex;
-  margin: 20px 24px 0;
+  margin: 20px 25px 0;
   min-height: 80px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -71,10 +83,12 @@
 
 .sidebar-account-body {
   margin-left: 8px;
+  a {
+    font-size: 18px;
+  }
 }
 
 .sidebar-account-name {
-  font-size: 16px;
   margin-bottom: 8px;
 }
 
@@ -86,44 +100,115 @@
 }
 
 .sidebar-help {
-  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: 25px;
   margin-top: 20px;
-  margin-left: 24px;
-  padding-bottom: 35px;
   li {
     line-height: 26px;
   }
 }
 
-// @include media-breakpoint-down(lg) {
-//
-//   .sidebar {
-//     width: 80px !important;
-//   }
-//
-//   .sidebar-logo,
-//   .sidebar-account {
-//     visibility: hidden;
-//   }
-//
-//   .sidebar-submenu,
-//   .sidebar-menu-text,
-//   .sidebar-account-body,
-//   .sidebar-help {
-//     display: none;
-//   }
-//
-//   .sidebar-account {
-//     margin-left: 15px;
-//     margin-right: 0;
-//   }
-//
-//   .sidebar-account-avatar {
-//     margin-bottom: 161px;
-//     visibility: visible;
-//   }
-//
-// }
+.sidebar-menu,
+.sidebar-account,
+.sidebar-help {
+  a {
+    color: $color-dove-gray;
+  }
+}
+
+.sidebar-toggle {
+  border-top: 1px solid $color-mercury;
+  line-height: 60px;
+  padding-bottom: 35px;
+  padding-left: 25px;
+  vertical-align: middle;
+}
+
+.navbar,
+.sidebar-close {
+  display: none;
+}
+
+.sidebar-close {
+  font-size: 29px;
+  text-align: right;
+  margin-right: 25px;
+}
+
+//Styles for Navi Tablet (>=768px & <1280px)
+@mixin sidebar-icon-only {
+  width: 80px;
+  .logo,
+  .sidebar-account {
+    visibility: hidden;
+  }
+
+  .sidebar-submenu,
+  .sidebar-submenu-item,
+  .sidebar-menu-text,
+  .sidebar-account-body,
+  .sidebar-help,
+  .sidebar-toggle-text {
+    display: none;
+  }
+
+  .sidebar-account {
+    margin-left: 15px;
+    margin-right: 0;
+  }
+
+  .sidebar-account-avatar {
+    visibility: visible;
+  }
+
+  .sidebar-toggle {
+    padding-left: 32px;
+    .fa-arrow-left::before {
+      content: "\f061";
+    }
+  }
+}
+
+.sidebar-icon-only {
+  @include sidebar-icon-only;
+}
+
+//Styles for Navi Mobile (<768px)
+.sidebar-mobile {
+  display: block !important;
+  .sidebar-close {
+    display: block;
+    margin-top: 27px;
+  }
+  .logo,
+  .sidebar-help,
+  .sidebar-toggle {
+    display: none;
+  }
+  .sidebar-account {
+    margin-bottom: 55px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .navbar {
+    display: flex;
+    width: 100%;
+    .hamburger {
+      margin-left: 25px;
+      margin-top: 27px;
+      font-size: 29px;
+    }
+    .logo {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
 
 // Tabs
 .nav-tabs {

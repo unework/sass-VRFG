@@ -23,6 +23,7 @@ ul {
 }
 
 .gray-block-amount {
+  background-color: $color-mercury;
   padding: 20px 10px;
   &:first-of-type {
     padding-left: 20px;
@@ -30,8 +31,8 @@ ul {
   &:last-of-type {
     padding-right: 20px;
   }
-  background-color: $color-mercury;
-  .dropdown {
+  .dropdown,
+  .input-readonly {
     background-color: white;
   }
 }
