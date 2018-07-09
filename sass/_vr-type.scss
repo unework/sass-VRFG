@@ -7,17 +7,22 @@ h2 { font-size: $h2-font-size; }
 h3 { font-size: $h3-font-size; }
 
 h1 {
+  font-weight: normal;
   margin-bottom: 30px;
   i.fa {
     font-size: 30px;
     margin-right: 12px;
   }
+  i.fa-info-circle {
+    color: $color-silver-chalice;
+    font-size: 24px;
+  }
 }
 
 h2 {
+  font-weight: bold;
   margin-top: 20px;
   margin-bottom: 40px;
-  font-weight: bold;
   &.accordion {
     margin-bottom: 0;
     a:before {

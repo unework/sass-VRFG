@@ -1,0 +1,159 @@
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-dialog {
+  background-color: rgba(0,0,0,0.2);
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 20px 0 $color-silver-chalice;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 0 20px 30px;
+  &.small {
+    width: 458px;
+  }
+  &.medium {
+    width: 770px;
+  }
+  &.large {
+    width: 1120px;
+  }
+}
+
+.modal-header {
+  display: flex;
+  button.close {
+    color: $color-silver-chalice;
+    font-size: 22px;
+    height: 60px;
+    margin-left: auto;
+  }
+}
+
+.modal-body {
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  text-align: right;
+}
+
+.confirm-container {
+  position: relative;
+}
+
+.confirm-dialog {
+  background-color: white;
+  border-radius: 4px;
+  bottom: 100%;
+  box-shadow: 0 0 20px 0 $color-silver-chalice;
+  display: none;
+  left: -260px;
+  height: 136px;
+  padding: 20px;
+  position: absolute;
+  right: 100%;
+  top: -78px;
+  width: 240px;
+  z-index: 10;
+  &::after {
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+    border-width: 10px;
+    content: "";
+    left: 100%;
+    position: absolute;
+    transform: rotate(180deg);
+  }
+}
+
+.confirm-content  {
+  display: flex;
+  button.close {
+    align-self: flex-start;
+    color: $color-silver-chalice;
+    font-size: 22px;
+  }
+}
+
+.user-guide {
+  background-color: $color-link-water-a;
+  padding: 0 12px 40px;
+  .user-guide-header {
+    padding-left: 22px;
+  }
+
+}
+
+.accordion-item {
+  background-color: white;
+  margin-bottom: 5px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.accordion-item-header {
+  cursor: pointer;
+  line-height: 55px;
+  margin-bottom: 0;
+  margin-top: 0;
+  &:after {
+    color: $color-endeavour;
+    content: "\f078";
+    float: right;
+    font-family: FontAwesome;
+    font-size: 22px;
+    font-weight: normal;
+  }
+  &.active:after {
+    content: "\f077";
+  }
+}
+.accordion-item-body {
+  margin-top: 12.5px;
+  padding-bottom: 30px;
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.tooltip {
+  display: inline-block;
+  font-size: 18px;
+  position: relative;
+  .tooltip-text {
+    background-color: $color-link-water-a;
+    border: 1px solid $color-pattens-blue;
+    bottom: 125%;
+    color: $color-tundora;
+    font-size: 12px;
+    left: 50%;
+    line-height: 18px;
+    margin-left: -150px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    padding: 20px;
+    position: absolute;
+    visibility: hidden;
+    width: 300px;
+    z-index: 10;
+  }
+  &:hover {
+    .tooltip-text {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

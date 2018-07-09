@@ -1,0 +1,64 @@
+.btn-no-border {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button.close {
+  @extend .btn-no-border;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.cta1-button {
+  @include cta-button(white, $color-blaze-orange, $color-blaze-orange, white, $color-bamboo);
+}
+
+.cta2-button {
+  @include cta-button($color-endeavour, white, $color-morning-glory, $color-endeavour, $color-link-water);
+  > .fa-angle-right {
+    margin-left: 12px;
+    margin-right: 0;
+  }
+}
+
+.cta-icon-only {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  width: 40px;
+  > .fa {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.big-link {
+  font-size: 16px;
+  > .fa {
+    margin-right: 11px;
+    font-size: 18px;
+  }
+}
+
+.text-link {
+  > .fa {
+    margin-right: 8px;
+    font-size: 16px;
+  }
+}
+
+.accordion-arrow {
+  font-size: 22px;
+  color: $color-endeavour;
+}
+
+//To be refactored
+.gender-radio-button {
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  label {
+    margin-right: 40px;
+  }
+}
